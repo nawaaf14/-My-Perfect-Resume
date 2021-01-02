@@ -74,7 +74,7 @@ width: 100%;
 page[size="A4"] {
     background-color: white;
     width: 21cm;
-    height: 29.7cm;
+    height: 29.2cm;
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -93,7 +93,7 @@ page[size="A4"] {
     display: flex;
     overflow: hidden;
     height: 100%;
-    padding: 20px 2px;
+    padding: 10px 2px 5px 2px;
 }
 
 section {
