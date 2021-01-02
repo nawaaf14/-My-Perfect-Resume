@@ -216,7 +216,7 @@ li {
 
 .date {
     flex: 0 0 var(--date-block-width);
-    padding-top: calc(var(--row-blocks-padding-top) + 2.5pt) !important;
+    padding-top: 8px !important;
     font-size: 6pt;
     text-align: right;
     line-height: 1;
@@ -245,28 +245,15 @@ li {
     border-left: var(--decorator-border);
 }
 
-.decorator::before {
-    position: absolute;
-    top: var(--decorator-outer-offset-top);
-    left: var(--decorator-outer-offset-left);
-    content: ' ';
-    display: block;
-    width: var(--decorator-outer-dim);
-    height: var(--decorator-outer-dim);
-    border-radius: calc(var(--decorator-outer-dim) / 2);
-    background-color: #fff;
-}
-
 .decorator::after {
     position: absolute;
-    top: calc(var(--decorator-outer-offset-top) + var(--decorator-border-width));
-    left: calc(var(--decorator-outer-offset-left) + var(--decorator-border-width));
-    content: ' ';
+    content: url("image/dot.svg");
+    top: 2px;
+    left: -5px;
     display: block;
     width: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
     height: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
     border-radius: calc((var(--decorator-outer-dim) - (var(--decorator-border-width) * 2)) / 2);
-    background-color: var(--gray-dark);
 }
 
 .details {
